@@ -5,6 +5,8 @@ Configuration in this directory creates an AWS EKS cluster with [Karpenter](http
 1. awscli
 2. terraform
 3. helm
+4. docker cli
+5. your aws account access key and secret access key (For aws configure command)
 
 ## Usage
 
@@ -12,6 +14,9 @@ To provision the provided configurations you need to execute:
 
 ```bash
 $ aws configure
+$ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
+
+![alt text](login-to-aws-ecr.png)
 $ cd ./examples/karpenter
 $ terraform init
 $ terraform plan
