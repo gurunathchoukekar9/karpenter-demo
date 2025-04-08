@@ -34,7 +34,7 @@ kubectl apply -f karpenter.yaml
 
 # Second, deploy the example deployment
 kubectl apply -f inflate.yaml
-or
+
 kubectl apply -f nginx-app-deployment.yaml
 # you can bump replica count to see new k8 worker nodes getting spin up
 

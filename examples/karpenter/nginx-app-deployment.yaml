@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   namespace: default
 spec:
-  replicas: 1
+  replicas: 100 #play with this number to see k8 worker nodes getting spined up by karpenter
   selector:
     matchLabels:
       app: nginx
